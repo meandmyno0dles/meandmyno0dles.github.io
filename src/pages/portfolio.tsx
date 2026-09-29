@@ -46,7 +46,7 @@ export default function Portfolio() {
   const currentProjects = [
     {
       title: "AI/Media Home Lab",
-      description: "Personal AI server built with Nvidia Jetson Orin Nano Super for local AI and security research. The Jetson also runs a Docker-based Jellyfin server with attached storage, all a[...]
+      description: "Personal AI server built with Nvidia Jetson Orin Nano Super for local AI and security research. The Jetson also runs a Docker-based Jellyfin server with attached storage, all accessible through Tailscale."
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["NVIDIA", "AI/ML", "Research"],
       link: "#",
