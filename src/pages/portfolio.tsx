@@ -355,15 +355,15 @@ export default function Portfolio() {
                       Founded and lead a global HTB team, achieving #104 worldwide ranking through strategic coordination and skill development.
                     </p>
                     <ul className="space-y-2 text-sm">
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Target className="text-cyber-green mr-2 h-4 w-4" />
                         Team coordination & strategy
                       </li>
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Target className="text-cyber-green mr-2 h-4 w-4" />
                         Mentoring team members
                       </li>
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Target className="text-cyber-green mr-2 h-4 w-4" />
                         Challenge analysis & documentation
                       </li>
@@ -379,7 +379,7 @@ export default function Portfolio() {
                         { skill: "Cryptography", level: "Advanced", color: "text-cyber-blue" },
                         { skill: "Reverse Engineering", level: "Expert", color: "text-cyber-green" }
                       ].map((item) => (
-                        <div key={item.skill} className="flex justify-between">
+                        <div key={item.skill} className="flex justify-between text-cyber-green">
                           <span>{item.skill}</span>
                           <span className={item.color}>{item.level}</span>
                         </div>
@@ -420,19 +420,19 @@ export default function Portfolio() {
                       Comprehensive foundation in enterprise networking technologies, protocols, and security fundamentals.
                     </p>
                     <ul className="space-y-2 text-sm">
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Network className="text-cyber-blue mr-2 h-4 w-4" />
                         IP addressing & subnetting (IPv4/IPv6)
                       </li>
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Network className="text-cyber-blue mr-2 h-4 w-4" />
                         VLANs & inter-VLAN routing
                       </li>
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Network className="text-cyber-blue mr-2 h-4 w-4" />
                         Spanning Tree Protocol (STP)
                       </li>
-                      <li className="flex items-center">
+                      <li className="flex items-center text-cyber-green">
                         <Network className="text-cyber-blue mr-2 h-4 w-4" />
                         OSPF & EIGRP routing protocols
                       </li>
@@ -441,7 +441,7 @@ export default function Portfolio() {
                   
                   <div>
                     <h4 className="font-semibold text-cyber-green mb-4">Security & Troubleshooting</h4>
-                    <div className="space-y-3">
+                    <div className="space-y-3 text-cyber-green">
                       <div className="flex items-center">
                         <Shield className="text-cyber-blue mr-2 h-4 w-4" />
                         <span>Network Access Control (802.1X)</span>
