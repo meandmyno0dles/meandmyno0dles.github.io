@@ -9,7 +9,7 @@ interface ProjectCardProps {
     description: string;
     image: string;
     tags: string[];
-    link: string;
+    link?: string;
     color: string;
     embedded?: boolean;
     downloadLink?: boolean;
@@ -70,16 +70,18 @@ export default function ProjectCard({ project, delay = 0 }: ProjectCardProps) {
               </span>
             ))}
           </div>
-          <Button
-            variant="link"
-            className={`p-0 h-auto ${project.color === 'border-cyber-green' ? 'text-cyber-blue hover:text-cyber-green' : 'text-cyber-blue hover:text-cyber-green'} transition-colors duration-300`}
-            asChild
-          >
-            <a href={project.link} target="_blank" rel="noopener noreferrer" download={project.downloadLink}>
-              <IconComponent className="mr-2 h-4 w-4" />
-              {linkText}
-            </a>
-          </Button>
+          {project.link && (
+            <Button
+              variant="link"
+              className={`p-0 h-auto ${project.color === 'border-cyber-green' ? 'text-cyber-blue hover:text-cyber-green' : 'text-cyber-blue hover:text-cyber-green'} transition-colors duration-300`}
+              asChild
+            >
+              <a href={project.link} target="_blank" rel="noopener noreferrer" download={project.downloadLink}>
+                <IconComponent className="mr-2 h-4 w-4" />
+                {linkText}
+              </a>
+            </Button>
+          )}
         </CardContent>
       </Card>
     </motion.div>
