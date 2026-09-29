@@ -10,8 +10,8 @@ export default function TerminalAnimation() {
     'Initializing security protocols...',
     'Loading CCNA certification...',
     'Connecting to Hack The Box...',
-    'Team rank: #104 globally',
-    'Machines owned: 100+',
+    'Team rank: #88 globally',
+    'Machines owned: 150+',
     'Challenges completed: 40+',
     'Status: Ready for deployment',
     'Welcome to Tyler Rossitto\'s portfolio'
