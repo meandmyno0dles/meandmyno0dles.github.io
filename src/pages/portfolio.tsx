@@ -6,9 +6,6 @@ import {
   Github, 
   ExternalLink, 
   Mail, 
-  Phone, 
-  MapPin, 
-  Download,
   Menu,
   X,
   Shield,
@@ -578,18 +575,10 @@ export default function Portfolio() {
               <h3 className="text-2xl font-orbitron text-cyber-blue mb-6">Get In Touch</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <MapPin className="text-cyber-green mr-4 h-6 w-6" />
-                  <span>Sanford, Florida</span>
-                </div>
-                <div className="flex items-center">
                   <Mail className="text-cyber-green mr-4 h-6 w-6" />
-                  <a href="mailto:t.rossitto@yahoo.com" className="hover:text-cyber-green transition-colors duration-300">
-                    t.rossitto@yahoo.com
+                  <a href="mailto:hpd775s8r@mozmail.com" className="hover:text-cyber-green transition-colors duration-300">
+                    hpd775s8r@mozmail.com
                   </a>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="text-cyber-green mr-4 h-6 w-6" />
-                  <span>303-594-0402</span>
                 </div>
                 <div className="flex items-center">
                   <Github className="text-cyber-green mr-4 h-6 w-6" />
