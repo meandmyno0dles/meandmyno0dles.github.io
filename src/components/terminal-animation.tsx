@@ -33,7 +33,7 @@ export default function TerminalAnimation() {
         const timeout = setTimeout(() => {
           setOutput(prev => prev + currentCommand[currentCharIndex]);
           setCurrentCharIndex(prev => prev + 1);
-        }, 50);
+        }, 15);
 
         return () => clearTimeout(timeout);
       } else {
@@ -41,7 +41,7 @@ export default function TerminalAnimation() {
           setOutput(prev => prev + '\n');
           setCurrentCommandIndex(prev => prev + 1);
           setCurrentCharIndex(0);
-        }, 1000);
+        }, 250);
 
         return () => clearTimeout(timeout);
       }
