@@ -27,7 +27,6 @@ import TerminalAnimation from "@/components/terminal-animation";
 import SkillBar from "@/components/skill-bar";
 import ProjectCard from "@/components/project-card";
 import TimelineItem from "@/components/timeline-item";
-import ContactForm from "@/components/contact-form";
 // CCNA logo will be referenced directly from public folder
 
 export default function Portfolio() {
@@ -565,68 +564,57 @@ export default function Portfolio() {
             <span className="text-cyber-green">[</span> ESTABLISH CONNECTION <span className="text-cyber-green">]</span>
           </motion.h2>
           
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Contact Info */}
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <h3 className="text-2xl font-orbitron text-cyber-blue mb-6">Get In Touch</h3>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Mail className="text-cyber-green mr-4 h-6 w-6" />
-                  <a href="mailto:hpd775s8r@mozmail.com" className="hover:text-cyber-green transition-colors duration-300">
-                    hpd775s8r@mozmail.com
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <Github className="text-cyber-green mr-4 h-6 w-6" />
-                  <a href="https://github.com/meandmyno0dles" className="hover:text-cyber-green transition-colors duration-300">
-                    GitHub Profile
-                  </a>
-                </div>
-                <div className="flex items-center">
-                  <Target className="text-cyber-green mr-4 h-6 w-6" />
-                  <a href="https://app.hackthebox.com/users/2364740" className="hover:text-cyber-green transition-colors duration-300">
-                    Hack The Box
-                  </a>
-                </div>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-2xl mx-auto"
+          >
+            <h3 className="text-2xl font-orbitron text-cyber-blue mb-6">Get In Touch</h3>
+            <div className="space-y-4 mb-8">
+              <div className="flex items-center">
+                <Mail className="text-cyber-green mr-4 h-6 w-6" />
+                <a href="mailto:hpd775s8r@mozmail.com" className="hover:text-cyber-green transition-colors duration-300">
+                  hpd775s8r@mozmail.com
+                </a>
               </div>
-              
-              {/* Personal Interests */}
-              <div className="mt-8">
-                <h4 className="text-lg font-semibold text-cyber-blue mb-4">Beyond the Code</h4>
-                <div className="grid grid-cols-2 gap-4 text-sm">
-                  <div className="flex items-center">
-                    <Target className="text-cyber-green mr-2 h-4 w-4" />
-                    Chess (1400 rating)
-                  </div>
-                  <div className="flex items-center">
-                    <Film className="text-cyber-blue mr-2 h-4 w-4" />
-                    Film Enthusiast
-                  </div>
-                  <div className="flex items-center">
-                    <Book className="text-cyber-green mr-2 h-4 w-4" />
-                    Avid Reader
-                  </div>
-                  <div className="flex items-center">
-                    <Tv className="text-cyber-blue mr-2 h-4 w-4" />
-                    Anime Fan
-                  </div>
-                </div>
+              <div className="flex items-center">
+                <Github className="text-cyber-green mr-4 h-6 w-6" />
+                <a href="https://github.com/meandmyno0dles" className="hover:text-cyber-green transition-colors duration-300">
+                  GitHub Profile
+                </a>
               </div>
-            </motion.div>
+              <div className="flex items-center">
+                <Target className="text-cyber-green mr-4 h-6 w-6" />
+                <a href="https://app.hackthebox.com/users/2364740" className="hover:text-cyber-green transition-colors duration-300">
+                  Hack The Box
+                </a>
+              </div>
+            </div>
             
-            {/* Contact Form */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <ContactForm />
-            </motion.div>
-          </div>
+            {/* Personal Interests */}
+            <div>
+              <h4 className="text-lg font-semibold text-cyber-blue mb-4">Beyond the Code</h4>
+              <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="flex items-center">
+                  <Target className="text-cyber-green mr-2 h-4 w-4" />
+                  Chess (1400 rating)
+                </div>
+                <div className="flex items-center">
+                  <Film className="text-cyber-blue mr-2 h-4 w-4" />
+                  Film Enthusiast
+                </div>
+                <div className="flex items-center">
+                  <Book className="text-cyber-green mr-2 h-4 w-4" />
+                  Avid Reader
+                </div>
+                <div className="flex items-center">
+                  <Tv className="text-cyber-blue mr-2 h-4 w-4" />
+                  Anime Fan
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
