@@ -73,7 +73,7 @@ export default function Portfolio() {
       description: "Recreation of the classic JezzBall game featuring DragonBall Z characters, built with Python and Pygame.",
       image: "/dbJezz2_1754149376739.gif",
       tags: ["Python", "Pygame", "Game Dev"],
-      link: "/dragonJezz_1754149588268.zip",
+      link: "/public/jezzball/dragonJezz_1754149588268.zip",
       downloadLink: true,
       color: "border-cyber-blue"
     }
