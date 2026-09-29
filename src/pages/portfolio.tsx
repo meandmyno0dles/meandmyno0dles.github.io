@@ -46,7 +46,7 @@ export default function Portfolio() {
   const currentProjects = [
     {
       title: "AI/Media Home Lab",
-      description: "Personal AI server built with Nvidia Jetson Orin Nano Super for local AI and security research. The Jetson also runs a Docker-based Jellyfin server with attached storage, all accessible through Tailscale.",
+      description: "Personal AI server built with Nvidia Jetson Orin Nano Super for local AI and security research. The Jetson also runs a Docker-based Jellyfin server with attached storage, all a[...]
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       tags: ["NVIDIA", "AI/ML", "Research"],
       link: "#",
@@ -401,7 +401,7 @@ export default function Portfolio() {
                   <div className="flex items-center">
                     <img src="/ccna-logo.jpg" alt="CCNA Logo" className="h-12 w-auto mr-4" />
                     <Button variant="link" className="text-cyber-green hover:text-cyber-blue transition-colors duration-300" asChild>
-                      <a href="#" target="_blank" rel="noopener noreferrer">
+                      <a href="https://cp.certmetrics.com/cisco/en/public/verify/credential/G4SHY9JPKV06PCQJ" target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Verify
                       </a>
