@@ -621,7 +621,7 @@ export default function Portfolio() {
       <footer className="bg-cyber-dark border-t border-cyber-green/20 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="font-orbitron text-cyber-green mb-4">TYLER.ROSSITTO</div>
-          <p className="text-cyber-muted text-sm">© 2024 Tyler Rossitto. Securing the digital frontier.</p>
+          <p className="text-cyber-muted text-sm">© 2024 _1337.</p>
         </div>
       </footer>
     </div>
