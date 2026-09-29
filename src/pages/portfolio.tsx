@@ -499,16 +499,6 @@ export default function Portfolio() {
             <span className="text-cyber-green">[</span> CULINARY ARTISTRY <span className="text-cyber-green">]</span>
           </motion.h2>
           
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-center text-lg mb-12 text-gray-300 max-w-3xl mx-auto"
-          >
-            Before transitioning to cybersecurity, I honed my attention to detail and precision through professional pastry arts. 
-            These skills translate directly to security work - both require meticulous planning, creative problem-solving, and flawless execution.
-          </motion.p>
-          
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
               { src: '/dessert1.jpg', alt: 'Artisan pastries with powdered sugar' },
@@ -537,24 +527,9 @@ export default function Portfolio() {
                   alt={dessert.alt}
                   className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-0 left-0 right-0 p-3 text-xs text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  {dessert.alt}
-                </div>
               </motion.div>
             ))}
           </div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center mt-12"
-          >
-            <p className="text-cyber-blue font-orbitron">
-              "Precision in the kitchen translates to precision in securing networks"
-            </p>
-          </motion.div>
         </div>
       </section>
 
